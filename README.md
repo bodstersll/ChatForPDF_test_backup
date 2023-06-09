@@ -1,6 +1,18 @@
 # ChatForPDF_test_backup
 本项目已在 Python 3.9，CUDA 11.8 环境下完成测试。
 vue前端需要node18环境
+
+## 项目介绍
+
+#### 本项目基于ChatGLM，具备多种语言能力，包括自我认知、提纲写作、信息抽取、文案写作。
+#### 基于本地数据库实现问答功能，利用提示词进行微调效果提升
+#### 单文档问答（支持PDF、Word）包括五个步骤：加载分割文本、并将其与用户问题进行匹配
+#### 匹配的两种方式为字符搜索或语义搜索，后者更为常用
+#### WebUI包括LLM对话、知识库测试和模型配置
+#### 本地知识库问答可通过微调embedding模型提高本地知识库问答效果
+#### 支持图片中的文字OCR识别
+
+
 ## Docker 部署
 
     sudo apt-get update
@@ -37,10 +49,13 @@ vue前端需要node18环境
 
     执行 cli_demo.py 脚本体验命令行交互：
     python cli_demo.py
+
     执行 webui.py 脚本体验 Web 交互
     python webui.py
+
     执行 api.py 利用 fastapi 部署 API
     python api.py
+
     成功部署 API 后，执行以下脚本体验基于 VUE 的前端页面
     cd views 
     pnpm i
