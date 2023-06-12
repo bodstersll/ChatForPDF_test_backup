@@ -31,7 +31,7 @@ vue前端需要node18环境
 
 ## Windows 部署
     # 拉取仓库
-    git clone https://github.com/imClumsyPanda/langchain-ChatGLM.git
+    git clone https://github.com/bodstersll/ChatForPDF_test_backup.git
 
     # 进入目录
     cd langchain-ChatGLM
